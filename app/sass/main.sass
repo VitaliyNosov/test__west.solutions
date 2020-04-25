@@ -415,7 +415,15 @@ nav
 	height: 100%
 
 .card-body 
-	height: 184px
+	height: 185px
+	color: #999999
+	overflow: auto
+	overflow-x: hidden
+
+.cart__header
+	font-family: "montserrat"
+	font-size: 14px
+	margin-right: 60%
 
 .card-header 
 	display: flex
@@ -424,47 +432,21 @@ nav
 	
 	button
 		color: #333333
-		background-color: #fff
-		width: 500px
+		width: 30px
+		border-radius: 50% 
 		display: flex
-		justify-content: space-between
+		justify-content: center
 		align-items: center
-		
-.btn-link 
-	text-decoration: none
-	font-family: "montserrat"
-	font-size: 14px
-	display: block
-	&:hover 
-		text-decoration: none
-		color: #333333
 
-input 
-  	display: none
+// custome icons arror
 
-label 
-  	display: flex
-  	margin: 0px
-  	justify-content: center
-  	align-items: center
-  	border-radius: 20px
-  	transition: transform .3s
-
-input:checked + label 
-  	transform: rotate(180deg)
-
-
-.checkbox__one
-	border: 1px solid red
-
-.checkbox__two
-	border: 1px solid green
-
-.checkbox__three
-	border: 1px solid blue
-
-
-// section meet our team 
+.img__arror 
+	transition: transform 0.5s ease
+	
+.rotate 
+  transform: rotate(180deg)
+//   -moz-transform: rotate(180deg)
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2)
 
 .team__foto__block
 	width: 100%

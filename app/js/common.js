@@ -44,9 +44,34 @@ $('.slider').slick({
     slidesToScroll: 1
 });
 
+// custome scrollbar
+
+$('.card-body').overlayScrollbars({
+    sizeAutoCapable: false,
+    resize: "vertical"
+    
+});
+
+// icon arror rotate
+
+
+$('#foo').on('click', function () {
+    this.classList.toggle('rotate')
+});
+
+$('#foo__two').on('click', function () {
+    this.classList.toggle('rotate')
+});
+
+$('#foo__three').on('click', function () {
+    this.classList.toggle('rotate')
+});
 
 
 
 });
+
+
+
 
 
