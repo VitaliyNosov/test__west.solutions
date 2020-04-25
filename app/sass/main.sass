@@ -448,23 +448,103 @@ nav
 //   -moz-transform: rotate(180deg)
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2)
 
-.team__foto__block
-	width: 100%
-	margin-top: 50px
-	display: flex
-	justify-content: space-between
+// cart block
 
-.foto__container
-	width: 32%
-	display: flex
-	justify-content: center
-	flex-wrap: wrap
+.carts__container 
+  width: 100%
+  display: flex
+  align-items: flex-end
+  margin-top: 50px
+  justify-content: space-between
+  // background-color: #0078B9
 
-.foto 
-	width: 100%
-	img 
-		width: 100%
-		height: 100%
+.cart
+  width: 31%
+
+.home-active
+  width: 100%
+  height: 470px
+  position: relative
+  img
+    width: 100%
+    height: 100%
+
+.block-hidden
+  display: none
+
+// one hover  
+
+.home-active:hover .block-hidden-one .block__icons
+  width: 101%
+  height: 101%
+  position: absolute
+  top: -3%
+  left: -3%
+  background: url(../img/foto/1-01.png) no-repeat center
+  background-size: 100% 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  box-shadow: 10px 12px 0px 0px rgba(149,225,211,1)
+  
+
+// two hover
+
+.home-active:hover .block-hidden-two .block__icons
+  width: 101%
+  height: 101%
+  position: absolute
+  top: -3%
+  left: -3%
+  background: url(../img/foto/2-02.png) no-repeat center
+  background-size: 100% 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  box-shadow: 10px 12px 0px 0px rgba(149,225,211,1)
+
+// three hover
+
+.home-active:hover .block-hidden-three .block__icons
+  width: 101%
+  height: 101%
+  position: absolute
+  top: -3%
+  left: -3%
+  background: url(../img/foto/3-03.png) no-repeat center
+  background-size: 100% 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  box-shadow: 10px 12px 0px 0px rgba(149,225,211,1)
+ 
+.block__icons
+  width: 80%
+  display: flex
+  display: none
+  justify-content: center
+
+.icon 
+  width: 56px
+  height: 56px
+  margin: 1px
+  a
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #fce38a
+    color: #f38181
+    font-size: 24px
+    text-decoration: none
+    &:hover
+      background-color: #f38181
+      color: #fff
+      cursor: pointer
 
 .foto__info
 	width: 100%
