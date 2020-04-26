@@ -1,59 +1,119 @@
 @import "vars"
 
+// desktop first
+
 @media (max-width: 1200px) 
   .content
     max-width: 970px
     padding: 0px 20px 0px 20px
+
   nav 
     a 
       font-size: 14px
+
+  .slider .slick-dots
+    display: flex
+    justify-content: space-between
+    li 
+      width: 22%
+      margin: 0 10px 0 0
+
+  .cart__header__text 
+    margin-right: 40%
 
 @media (max-width: 992px) 
   .content
     max-width: 750px
     padding: 0px 20px 0px 20px
+
   .menu 
     display: none
+
+  .menu__icons__block
+    display: none
+
+  .mobile__icon__block
+    display: flex
+    justify-content: center
+    align-items: center
+
   .burger 
     display: flex
+
   .mobile__menu
     display: none
+  
+  .slider .slick-dots
+    display: flex
+    justify-content: space-between
+    li 
+      width: 22%
+      margin: 0 10px 0 0
+
+  .we__do__content__block
+    display: flex
+    flex-direction: column
+
+  .we__do__foto
+    width: 100%
+
+  .we__do__accordion
+    width: 100%
+
+  .cart__header__text 
+    margin-right: 0
+  
+    
  
 @media (max-width: 767px) 
   .content
     max-width: none
     padding: 0px 20px 0px 20px
+
   .mobile__menu
     display: none
 
+  .menu__icons__block
+    display: none
 
-/*==========  Desktop First  ==========*/
+  .mobile__icon__block
+    display: flex
+    justify-content: center
+    align-items: center
 
-// ≥1200px
-+media-breakpoint-down(lg)
+  .slider__header
+    font-size: 32px
 
-// ≥992px
-+media-breakpoint-down(md)
+  .slider__info__block
+    h1 
+      font-size: 50px
 
-// ≥768px
-+media-breakpoint-down(sm)
+  .slider .slick-dots
+    padding-bottom: 50px
 
-// ≥576px
-+media-breakpoint-down(xs)
+  .slider__block__menu
+    display: none
+
+  .carts__container 
+    display: flex
+    flex-direction: column
+
+  .cart 
+    width: 100%
+
+  .blog__section 
+    display: flex
+    flex-direction: column
+
+  .blog__container
+    width: 100%
+    margin-top: 20px
+
+  .cart__header__text 
+    font-size: 12px
+    margin-right: 0
+    
 
 
-/*==========  Mobile First  ==========*/
-
-// ≤576px
-+media-breakpoint-up(sm)
-
-// ≤768px
-+media-breakpoint-up(md)
-
-// ≤992px
-+media-breakpoint-up(lg)
-
-// ≤1200px
-+media-breakpoint-up(xl)
 
 
