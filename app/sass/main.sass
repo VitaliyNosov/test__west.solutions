@@ -22,7 +22,7 @@ body
 	color: $text
 	background-color: #fff
 	input, textarea
-		border: #666 1px solid
+		// border: #666 1px solid
 		outline: none
 		&:focus:required:invalid
 			border-color: red
@@ -707,6 +707,279 @@ nav
 .current
 	background-color: #B86161
 	color: #fff
+
+
+
+
+
+
+// blog file style
+
+.section__header__blog
+	width: 100%
+	background: url(../img/foto/Layer_15.png) no-repeat center 
+	background-size: 100% 100%
+
+.header__blog__info
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #fff 
+	font-family: "kaushan-script"
+	h2 
+		font-size: 60px
+		margin: 50px 0px 50px 0px
+
+
+.blog__content
+	width: 100% 
+	margin-top: 100px
+	margin-bottom: 100px
+	display: flex
+	justify-content: space-between
+
+// blog body
+
+.blog__body 
+	width: 65%
+
+.blog__name
+	width: 100%
+	height: 40px
+	margin: 20px 0px 0px 0px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+
+.blog__images
+	width: 100%
+	height: 500px
+	margin: 20px 0px 20px 0px
+	img 
+		width: 100%
+		height: 100%
+
+.blog__text
+	width: 100%
+	overflow: hidden
+
+.blog__coments 
+	width: 100%
+	margin-top: 50px
+
+.coments__header 
+	width: 100%
+	padding: 20px 0px 20px 0px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	font-family: "kaushan-script"
+	border-bottom: 1px solid #ccc
+	h2
+		font-size: 45px 
+		
+
+.coments__body 
+	width: 100%
+	display: flex
+	justify-content: space-between
+	margin: 20px 0px 30px 0px
+
+.coments__foto 
+	width: 25%
+
+.images__block
+	width: 150px
+	height: 150px
+	border-radius: 50%
+	overflow: hidden
+	img 
+		width: 100%
+		height: 100%
+
+.coments__info 
+	width: 75%
+
+.coments__name
+	width: 100%
+	padding: 0px 5px 0px 5px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	color:  #D8847E
+	font-family: "kaushan-script"
+	font-size: 22px
+
+.coments__data 
+	width: 100%
+	padding: 0px 2px 0px 2px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	color: #0075B7
+	font-size: 14px
+
+.coments__text 
+	width: 100%
+	padding: 10px 0px 10px 0px
+	font-size: 14px
+	color: #999999
+
+.blog__raiting 
+	width: 100%
+	display: flex
+	justify-content: flex-start
+
+.starts__body
+  width: 100px
+  height: 20px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.rating__mini
+  display: inline-block
+  font-size: 0
+
+  span
+    padding: 0
+    font-size: 20px
+    line-height: 1
+    color: lightgrey
+
+  > span
+    &:before
+      content: '★'
+
+    &.active
+      color: #E38B84
+
+// form
+
+.blog__coments__form 
+	width: 100%
+	margin: 100px 0px 100px 0px
+
+.form__header
+	width: 100%
+	padding: 20px 0px 20px 0px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	font-family: "kaushan-script"
+	h3
+		font-size: 35px
+
+form 
+	width: 100%
+	input
+		width: 100%
+		height: 50px
+		padding: 0px 20px 0px 20px
+		margin: 0px 0px 20px 0px
+		border: none
+		border: 1px solid #CCC
+		color: #747474
+		&::placeholder
+			color: #B6B6B6
+
+	textarea 
+		width: 100%
+		height: 100px
+		padding: 20px 20px 0px 20px
+		margin: 0px 0px 20px 0px
+		border: 1px solid #CCC
+		color: #747474
+		resize: none
+		&::placeholder
+			color: #B6B6B6
+	
+
+.button__content 
+	width: 100%
+	height: 50px
+	display: flex
+	justify-content: flex-end
+	a 
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 0px 80px 0px 80px
+		text-decoration: none
+		background-color: #E38B84
+		color: #fff
+		&:hover 
+			background-color: #D4817B
+
+
+// blog sidebar
+
+.blog__content
+	width: 100%
+
+.blog__sidebar 
+	width: 25%
+	
+.blog__categoty 
+	width: 100%
+	
+.category__header 
+	width: 100%
+	padding: 15px 0px 15px 0px
+	display: flex
+	justify-content: center
+	align-items: center
+	border: 1px solid #EAEAEA
+	font-family: "kaushan-script"
+	h2 
+		font-size: 35px
+		
+
+.category__content 
+	width: 100%
+
+.category
+	width: 100%
+	height: 50px
+	margin: 10px 0px 10px 0px
+	padding: 0px 10px 0px 10px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	background-color: rgba(255, 255, 255, 0.1)
+	border: 1px solid #fff
+	&:hover
+		border: 1px solid #EAEAEA
+		cursor: pointer
+
+.category__name 
+	width: 50%
+	display: flex
+	justify-content: flex-start
+	h3 
+		margin: 0px
+		font-size: 16px
+
+.category__quantity 
+	width: 50%
+	display: flex
+	justify-content: flex-end
+	font-size: 16px
+
+.category__baner
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	background: url(../img/foto/front-apacity-bg.png) no-repeat center
+	block-size: 100% 100%
+	img 
+		width: 230px
+		height: 230px
+
+
+
 
 
 @import "media" // Always at the end
